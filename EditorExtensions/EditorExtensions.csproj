@@ -64,9 +64,9 @@
     <CopyVsixExtensionLocation>bin/release/new folder</CopyVsixExtensionLocation>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxMin, Version=5.7.5124.21494, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+    <Reference Include="AjaxMin, Version=5.11.5295.12304, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\AjaxMin.5.7.5124.21499\lib\net40\AjaxMin.dll</HintPath>
+      <HintPath>..\packages\AjaxMin.5.11.5295.12309\lib\net40\AjaxMin.dll</HintPath>
     </Reference>
     <Reference Include="CssSorter">
       <HintPath>..\CssSorter.dll</HintPath>
@@ -130,6 +130,9 @@
     <Reference Include="Microsoft.Web.Editor, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(DevEnvDir)\CommonExtensions\Microsoft\Web\Editor\Microsoft.Web.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Minimatch">
+      <HintPath>..\packages\Minimatch.1.1.0.0\lib\portable-net40+sl50+win+wp80\Minimatch.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -333,6 +336,7 @@
     <Compile Include="Options\TypeScript.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Options\WEIgnore.cs" />
     <Compile Include="Validation\CSS\Filters\VariableCssErrorFilter.cs" />
     <Compile Include="Validation\LESS\Filters\LessAmpersandCssErrorFilter.cs" />
     <Compile Include="Validation\LESS\Filters\LessExtendCssErrorFilter.cs" />
